@@ -164,6 +164,42 @@ h1 span {
     transition: all 400ms ease-in-out;
 }
 
+/* Navigation */
+
+header {
+    padding: var(--spacer) 0;
+}
+
+@media (min-width: 40em) {
+    header {
+        position: sticky;
+        top: 0;
+    }
+}
+
+.logo {
+    max-width: 3rem;
+}
+
+.nav-list {
+    display: flex;
+    justify-content: center;
+    gap: 3em;
+}
+
+.nav-list a {
+    font-size: var(--fs-400);
+    text-decoration: none;
+    color: var(--clr-neutral-100);
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+.nav-list a:hover,
+.nav-list a:focus {
+    color: var(--clr-accent-400);
+}
+
 /* Layout */
 
 section {
