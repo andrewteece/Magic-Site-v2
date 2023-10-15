@@ -152,19 +152,19 @@ p {
 .btn-light:focus {
     color: var(--clr-neutral-900);
     background-color: var(--clr-neutral-100);
-    outline: 1px solid var(--clr-accent-400);
+    outline: 3px solid var(--clr-accent-400);
     transition: all 300ms ease-in-out;
 }
 
 .btn-accent:hover,
 .btn-accent:focus {
     color: var(--clr-accent-500);
-    outline: 1px solid var(--clr-neutral-900);
+    outline: 3px solid var(--clr-neutral-900);
     transition: all 300ms ease-in-out;
 }
 
 .text-accent {
-    color: var(--clr-accent-400);
+    color: var(--accent, var(--clr-accent-400));
 }
 
 .text-accent2 {
@@ -302,6 +302,10 @@ section {
 }
 
 /* Sections */
+
+.hero {
+    --gap: 3.5rem;
+}
 
 .hero img {
     transform: translateY(2em);
